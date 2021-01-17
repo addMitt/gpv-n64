@@ -1,11 +1,10 @@
-/*Start N64 Styling*/
-.controller.n64 {
+.controller.custom {
     background: url(https://localhost:9090/bundles/parsec-randomizer/graphics/gpv-n64/base.svgz);
     height: 851px;
     width: 810px;
 }
 
-.n64 .bumpers{
+.custom .bumpers{
     position: absolute;
     height: 100px;
     width: 664px;
@@ -13,7 +12,7 @@
     left: 73px
 }
 
-.n64 .bumper{
+.custom .bumper{
     background: url(https://localhost:9090/bundles/parsec-randomizer/graphics/gpv-n64/buttons.svgz);
     height: 68px;
     width: 174px;
@@ -21,17 +20,17 @@
     position: absolute;
 }
 
-.n64 .bumper.right{
+.custom .bumper.right{
     right: 0;
     transform: rotateY(180deg);
 }
 
-.n64 .triggers{
+.custom .triggers{
     position: absolute;
     left: 379px;
 }
 
-.n64 .trigger.left{
+.custom .trigger.left{
     width: 52px;
     height: 88px;
     background: url(https://localhost:9090/bundles/parsec-randomizer/graphics/gpv-n64/buttons.svgz);
@@ -39,7 +38,7 @@
     background-position-y: -72px;
 }
 
-.n64 .dpad{
+.custom .dpad{
     width: 150px;
     height: 150px;
     /*     background: #FF00008F; */
@@ -48,7 +47,7 @@
     left: 106px;
 }
 
-.n64 .dpad .face{
+.custom .dpad .face{
     background: url(https://localhost:9090/bundles/parsec-randomizer/graphics/gpv-n64/buttons.svgz);
     height: 64px;
     width: 44px;
@@ -57,30 +56,30 @@
     position: absolute
 }
 
-.n64 .dpad .face.up{
+.custom .dpad .face.up{
     left: 32px
 }
 
 
-.n64 .dpad .face.down{
+.custom .dpad .face.down{
     transform: rotate(180deg);
     left: 32px;
     top: 65px
 }
 
-.n64 .dpad .face.left{
+.custom .dpad .face.left{
     transform: rotate(-90deg);
     top: 33px
 }
 
-.n64 .dpad .face.right{
+.custom .dpad .face.right{
     transform: rotate(90deg);
     top: 33px;
     left: 64px;
 }
 
 /* We're using the node used for a controller's system button here */
-.n64 .meta{
+.custom .meta{
     background: url(https://localhost:9090/bundles/parsec-randomizer/graphics/gpv-n64/buttons.svgz);
     width: 55px;
     height: 55px;
@@ -90,13 +89,13 @@
     top: 344px
 }
 
-.n64 .abxy{
+.custom .abxy{
     position: absolute;
     top: 245px;
     left: 609px
 }
 
-.n64 .abxy .button{
+.custom .abxy .button{
     background: url(https://localhost:9090/bundles/parsec-randomizer/graphics/gpv-n64/buttons.svgz);
     width: 47px;
     height: 47px;
@@ -105,35 +104,35 @@
     position: absolute;
 }
 
-.n64 .abxy .button.a{
+.custom .abxy .button.a{
     left: 45px
 }
 
-.n64 .abxy .button.b{
+.custom .abxy .button.b{
     left: 44px;
     top: 92px;
     transform: rotate(180deg);
 }
 
-.n64 .abxy .button.x{
+.custom .abxy .button.x{
     top: 45px;
     left: -2px;
     transform: rotate(-90deg)
 }
 
-.n64 .abxy .button.y{
+.custom .abxy .button.y{
     left: 91px;
     top: 46px;
     transform: rotate(90deg);
 }
 
-.n64 .arrows{
+.custom .arrows{
     position: absolute;
     top: 335px;
     left: 529px
 }
 
-.n64 .back, .n64 .start{
+.custom .back, .custom .start{
     background: url(https://localhost:9090/bundles/parsec-randomizer/graphics/gpv-n64/buttons.svgz);
     width: 61px;
     height: 61px;
@@ -142,19 +141,19 @@
     position: relative;
 }
 
-.n64 .start{
+.custom .start{
     background-position-y: -405px;
     top: -5px;
     left: 56px
 }
 
-.n64 .sticks{
+.custom .sticks{
     position: absolute;
     top: 493px;
     left: 369px;
 }
 
-.n64 .stick.left{
+.custom .stick.left{
     background: url(https://localhost:9090/bundles/parsec-randomizer/graphics/gpv-n64/buttons.svgz);
     width: 73px;
     height: 73px;
@@ -162,16 +161,15 @@
     background-position-y: 73px
 }
 
-.n64 .button,
-.n64 .face,
-.n64 .meta,
-.n64 .bumper,
-.n64 .trigger,
-.n64 .arrows *{
+.custom .button,
+.custom .face,
+.custom .meta,
+.custom .bumper,
+.custom .trigger,
+.custom .arrows *{
     opacity: 0
 }
 
-.n64 .pressed{
+.custom .pressed{
     opacity: 1
 }
-/*END N64 Styling*/
