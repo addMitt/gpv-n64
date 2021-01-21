@@ -1,8 +1,8 @@
 /* @import url("https://localhost:9090/bundles/parsec-randomizer/graphics/gpv-n64/n64.css"); */
 
 .controller.custom {
-    height: 851px;
-    width: 810px;
+    height: 871px;
+    width: 832px;
     transition: filter 0.5s ease;
     filter: brightness(1) drop-shadow(10px 10px 5px white) drop-shadow(-10px 10px 5px white) drop-shadow(-10px -10px 5px white) drop-shadow(10px -10px 5px white);
     filter: brightness(1);
@@ -98,8 +98,8 @@
     position: absolute;
     height: 100px;
     width: 664px;
-    top: 139px;
-    left: 74px;
+    top: 149px;
+    left: 85px;
 }
 
 .custom .bumper{
@@ -117,7 +117,7 @@
 
 .custom .triggers{
     position: absolute;
-    left: 379px;
+    left: 390px;
 }
 
 .custom .trigger.left{
@@ -134,8 +134,8 @@
     height: 150px;
     /*     background: #FF00008F; */
     position: absolute;
-    top: 280px;
-    left: 107px;
+    top: 290px;
+    left: 118px;
 }
 
 .custom .dpad .face{
@@ -177,15 +177,15 @@
     height: 55px;
     background-position-y: -282px;
     position: absolute;
-    left: 379px;
-    top: 343px;
+    left: 390px;
+    top: 353px;
 }
 
 .custom .abxy{
     /* c buttons container */
     position: absolute;
-    top: 245px;
-    left: 609px
+    top: 255px;
+    left: 620px
 }
 
 .custom .abxy .button{
@@ -227,8 +227,8 @@
 
 .custom .arrows{
     position: absolute;
-    top: 335px;
-    left: 529px
+    top: 345px;
+    left: 540px
 }
 
 .custom .back, .custom .start{
@@ -245,14 +245,14 @@
 .custom .start{
     /* A button */
     background-position-y: -405px;
-    top: -6px;
-    left: 56px;
+    top: 6px;
+    left: 67px;
 }
 
 .custom .sticks{
     position: absolute;
-    top: 493px;
-    left: 369px;
+    top: 503px;
+    left: 380px;
 }
 
 .custom .stick.left{
