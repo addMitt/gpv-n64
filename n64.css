@@ -1,1 +1,285 @@
-@import url("https://localhost:9090/bundles/parsec-randomizer/graphics/gpv-n64/n64.css");
+/* @import url("https://localhost:9090/bundles/parsec-randomizer/graphics/gpv-n64/n64.css"); */
+
+.controller.custom {
+    height: 851px;
+    width: 810px;
+    transition: filter 0.5s ease;
+    filter: brightness(1) drop-shadow(10px 10px 5px white) drop-shadow(-10px 10px 5px white) drop-shadow(-10px -10px 5px white) drop-shadow(10px -10px 5px white);
+    filter: brightness(1);
+}
+
+.controller.custom.disconnected {
+    filter: brightness(0.5);
+}
+
+.controller.custom::before {
+    content: '';
+    background: url(https://addmitt.github.io/gpv-n64/p_background.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    image-rendering: pixelated;
+    display: block;
+    height: 160px;
+    position: fixed;
+    transition: filter 0.5s ease;
+    width: 272px;
+}
+
+.controller.custom.disconnected::before {
+    filter: contrast(0.1) brightness(2.5) saturate(0);
+}
+
+.controller.custom::after {
+    content: '';
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 96px;
+    display: block;
+    filter: saturate(1) drop-shadow(4px 4px black);
+    image-rendering: pixelated;
+    height: 160px;
+    position: fixed;
+    transition: filter 0.5s ease;
+    width: 272px;
+    z-index: 20;
+}
+
+.controller.custom.disconnected::after {
+    filter: saturate(0.5) drop-shadow(4px 4px black);
+}
+
+#gamepad-0 {
+    background: url(https://addmitt.github.io/gpv-n64/base_blue.png);
+}
+#gamepad-0::before {
+    right: -20px;
+    top: -60px;
+}
+#gamepad-0::after {
+    background-image: url(https://addmitt.github.io/gpv-n64/p1.png);
+    right: -20px;
+    top: -60px;
+}
+
+#gamepad-1 {
+    background: url(https://addmitt.github.io/gpv-n64/base_red.png);
+}
+#gamepad-1::before {
+    left: -20px;
+    top: -60px;
+}
+#gamepad-1::after {
+    background-image: url(https://addmitt.github.io/gpv-n64/p2.png);
+    left: -20px;
+    top: -60px;
+}
+
+#gamepad-2 {
+    background: url(https://addmitt.github.io/gpv-n64/base_yellow.png);
+}
+#gamepad-2::before {
+    right: -20px;
+    top: -60px;
+}
+#gamepad-2::after {
+    background-image: url(https://addmitt.github.io/gpv-n64/p3.png);
+    right: -20px;
+    top: -60px;
+}
+
+#gamepad-3 {
+    background: url(https://addmitt.github.io/gpv-n64/base_green.png);
+}
+#gamepad-3::before {
+    left: -20px;
+    top: -60px;
+}
+#gamepad-3::after {
+    background-image: url(https://addmitt.github.io/gpv-n64/p4.png);
+    left: -20px;
+    top: -60px;
+}
+
+.custom .bumpers{
+    position: absolute;
+    height: 100px;
+    width: 664px;
+    top: 139px;
+    left: 74px;
+}
+
+.custom .bumper{
+    background: url(https://addmitt.github.io/gpv-n64/buttons.png);
+    height: 68px;
+    width: 174px;
+    display: block;
+    position: absolute;
+}
+
+.custom .bumper.right{
+    right: 0;
+    transform: rotateY(180deg);
+}
+
+.custom .triggers{
+    position: absolute;
+    left: 379px;
+}
+
+.custom .trigger.left{
+    width: 52px;
+    height: 88px;
+    background: url(https://addmitt.github.io/gpv-n64/buttons.png);
+    display: block;
+    background-position-y: -73px;
+    background-position-x: 2px;
+}
+
+.custom .dpad{
+    width: 150px;
+    height: 150px;
+    /*     background: #FF00008F; */
+    position: absolute;
+    top: 280px;
+    left: 107px;
+}
+
+.custom .dpad .face{
+    background: url(https://addmitt.github.io/gpv-n64/buttons.png);
+    height: 64px;
+    width: 44px;
+    background-position-y: -164px;
+    display: block;
+    position: absolute
+}
+
+.custom .dpad .face.up{
+    left: 32px
+}
+
+
+.custom .dpad .face.down{
+    transform: rotate(180deg);
+    left: 32px;
+    top: 65px
+}
+
+.custom .dpad .face.left{
+    transform: rotate(-90deg);
+    top: 33px
+}
+
+.custom .dpad .face.right{
+    transform: rotate(90deg);
+    top: 33px;
+    left: 64px;
+}
+
+/* We're using the node used for a controller's system button here */
+.custom .meta{
+    /* start button */
+    background: url(https://addmitt.github.io/gpv-n64/buttons.png);
+    width: 55px;
+    height: 55px;
+    background-position-y: -282px;
+    position: absolute;
+    left: 379px;
+    top: 343px;
+}
+
+.custom .abxy{
+    /* c buttons container */
+    position: absolute;
+    top: 245px;
+    left: 609px
+}
+
+.custom .abxy .button{
+    /* c buttons */
+    background: url(https://addmitt.github.io/gpv-n64/buttons.png);
+    width: 47px;
+    height: 47px;
+    background-position-y: -232px;
+    background-position-x: 1px;
+    display: block;
+    position: absolute;
+}
+
+.custom .abxy .button.a{
+    /* c-up */
+    left: 45px
+}
+
+.custom .abxy .button.b{
+    /* c-down */
+    left: 46px;
+    top: 91px;
+    transform: rotate(180deg);
+}
+
+.custom .abxy .button.x{
+    /* c-left */
+    top: 46px;
+    left: 0px;
+    transform: rotate(-90deg)
+}
+
+.custom .abxy .button.y{
+    /* c-right */
+    left: 91px;
+    top: 45px;
+    transform: rotate(90deg);
+}
+
+.custom .arrows{
+    position: absolute;
+    top: 335px;
+    left: 529px
+}
+
+.custom .back, .custom .start{
+    /* B button */
+    background: url(https://addmitt.github.io/gpv-n64/buttons.png);
+    width: 61px;
+    height: 61px;
+    background-position-y: -342px;
+    background-position-x: 1px;
+    display: block;
+    position: relative;
+}
+
+.custom .start{
+    /* A button */
+    background-position-y: -405px;
+    top: -6px;
+    left: 56px;
+}
+
+.custom .sticks{
+    position: absolute;
+    top: 493px;
+    left: 369px;
+}
+
+.custom .stick.left{
+    background: url(https://addmitt.github.io/gpv-n64/buttons.png);
+    width: 73px;
+    height: 73px;
+    display: block;
+    background-position-y: 73px
+}
+
+.custom .button,
+.custom .face,
+.custom .meta,
+.custom .bumper,
+.custom .trigger,
+.custom .arrows *{
+    filter: blur(1px);
+    opacity: 0;
+    transition: opacity 0.1s ease;
+}
+
+.custom .pressed{
+    opacity: 1
+}
