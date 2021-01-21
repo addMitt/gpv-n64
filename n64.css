@@ -1,6 +1,7 @@
 /* @import url("https://localhost:9090/bundles/parsec-randomizer/graphics/gpv-n64/n64.css"); */
 
 .controller.custom {
+    background-repeat: no-repeat;
     height: 871px;
     width: 832px;
     transition: filter 0.5s ease;
@@ -51,7 +52,7 @@
 }
 
 #gamepad-0 {
-    background: url(https://addmitt.github.io/gpv-n64/base_blue.png);
+    background-image: url(https://addmitt.github.io/gpv-n64/base_blue.png);
 }
 #gamepad-0::before {
     right: -20px;
@@ -62,7 +63,7 @@
 }
 
 #gamepad-1 {
-    background: url(https://addmitt.github.io/gpv-n64/base_red.png);
+    background-image: url(https://addmitt.github.io/gpv-n64/base_red.png);
 }
 #gamepad-1::before {
     left: -20px;
@@ -73,7 +74,7 @@
 }
 
 #gamepad-2 {
-    background: url(https://addmitt.github.io/gpv-n64/base_yellow.png);
+    background-image: url(https://addmitt.github.io/gpv-n64/base_yellow.png);
 }
 #gamepad-2::before {
     right: -20px;
@@ -84,7 +85,7 @@
 }
 
 #gamepad-3 {
-    background: url(https://addmitt.github.io/gpv-n64/base_green.png);
+    background-image: url(https://addmitt.github.io/gpv-n64/base_green.png);
 }
 #gamepad-3::before {
     left: -20px;
