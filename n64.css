@@ -100,7 +100,7 @@
     height: 100px;
     width: 664px;
     top: 149px;
-    left: 85px;
+    left: 84px;
 }
 
 .custom .bumper{
@@ -118,7 +118,8 @@
 
 .custom .triggers{
     position: absolute;
-    left: 390px;
+    left: 389px;
+    top: 11px;
 }
 
 .custom .trigger.left{
@@ -135,8 +136,8 @@
     height: 150px;
     /*     background: #FF00008F; */
     position: absolute;
-    top: 290px;
-    left: 118px;
+    top: 291px;
+    left: 117px;
 }
 
 .custom .dpad .face{
@@ -178,15 +179,15 @@
     height: 55px;
     background-position-y: -282px;
     position: absolute;
-    left: 390px;
-    top: 353px;
+    left: 389px;
+    top: 354px;
 }
 
 .custom .abxy{
     /* c buttons container */
     position: absolute;
-    top: 255px;
-    left: 620px
+    top: 256px;
+    left: 619px;
 }
 
 .custom .abxy .button{
@@ -228,8 +229,8 @@
 
 .custom .arrows{
     position: absolute;
-    top: 345px;
-    left: 540px
+    top: 346px;
+    left: 539px;
 }
 
 .custom .back, .custom .start{
@@ -246,8 +247,8 @@
 .custom .start{
     /* A button */
     background-position-y: -405px;
-    top: 6px;
-    left: 67px;
+    top: -6px;
+    left: 56px;
 }
 
 .custom .sticks{
