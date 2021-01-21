@@ -39,6 +39,7 @@
     image-rendering: pixelated;
     height: 160px;
     position: fixed;
+    top: -80px;
     transition: filter 0.5s ease;
     width: 272px;
     z-index: 20;
@@ -53,12 +54,10 @@
 }
 #gamepad-0::before {
     right: -20px;
-    top: -60px;
 }
 #gamepad-0::after {
     background-image: url(https://addmitt.github.io/gpv-n64/p1.png);
     right: -20px;
-    top: -60px;
 }
 
 #gamepad-1 {
@@ -66,12 +65,10 @@
 }
 #gamepad-1::before {
     left: -20px;
-    top: -60px;
 }
 #gamepad-1::after {
     background-image: url(https://addmitt.github.io/gpv-n64/p2.png);
     left: -20px;
-    top: -60px;
 }
 
 #gamepad-2 {
@@ -79,12 +76,10 @@
 }
 #gamepad-2::before {
     right: -20px;
-    top: -60px;
 }
 #gamepad-2::after {
     background-image: url(https://addmitt.github.io/gpv-n64/p3.png);
     right: -20px;
-    top: -60px;
 }
 
 #gamepad-3 {
@@ -92,12 +87,10 @@
 }
 #gamepad-3::before {
     left: -20px;
-    top: -60px;
 }
 #gamepad-3::after {
     background-image: url(https://addmitt.github.io/gpv-n64/p4.png);
     left: -20px;
-    top: -60px;
 }
 
 .custom .bumpers{
